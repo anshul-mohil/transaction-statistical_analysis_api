@@ -5,6 +5,10 @@ import com.anshul.exception.StaleTransactionException;
 
 import java.io.IOException;
 
+/**
+ * ITransactionService
+ *
+ */
 public interface ITransactionService {
 
   void makeTransaction(String jsonData) throws StaleTransactionException, FutureDatedOrNonParsableFieldException, IOException;
